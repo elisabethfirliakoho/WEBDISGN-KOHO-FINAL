@@ -188,7 +188,7 @@ if (checkoutBtn) {
       return;
     }
 
-    alert('Terima kasih! Pesananmu akan diprosesyaa.');
+    alert('Terima kasih! Pesananmu akan diprosesya.');
     Object.keys(cart).forEach(k => delete cart[k]);
 
     updateCartUI();
