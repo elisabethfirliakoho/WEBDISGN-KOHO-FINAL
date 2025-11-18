@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CakeShop — Chrisyaa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">CK</div>
+        <div>
+          <h1>CakeShop Chrisya</h1>
+          <div class="tag">Manisnya tiap momen — Untuk Semua</div>
+        </div>
+      </div>
+      <div>
+        <button class="btn" id="openAll">Lihat Semua Kue</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Selamat datang di CakeShop!</h2>
+        <p>Pilih kue lucu dan enak — klik "Tambah" untuk memasukkannya ke keranjang. Cocok untuk ulang tahun, kado, atau camilan.</p>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="btn" id="shopNow">Belanja Sekarang</button>
+          <button class="btn" id="surprise">Kejutan Kue</button>
+        </div>
+      </div>
+
+      <aside class="hero-card" style="position:relative">
+        <h3 style="margin-top:0">Keranjangmu</h3>
+        <div id="miniCart">
+          <div style="color:var(--muted)">Belum ada item — ayo tambah kue!</div>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <h3 style="margin:0 0 10px 0">Pilihan Kue</h3>
+      <div class="grid" id="products">
+        <!-- Produk akan di-render lewat JS -->
+      </div>
+    </section>
+
+    <div class="cart" id="cartBtn" title="Buka keranjang">
+      🛒
+      <div class="badge" id="count">0</div>
+    </div>
+
+    <div class="modal-backdrop" id="modal">
+      <div class="modal">
+        <h3>Keranjang</h3>
+        <div id="cartList"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+          <div style="font-weight:800">Total: <span id="total">Rp 0</span></div>
+          <div>
+            <button class="btn" id="checkout">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Dibuat oleh Elisabeth firlia koho &copy; 2025
+    </footer>
+  </div>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
